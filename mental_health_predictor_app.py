@@ -5,6 +5,10 @@ import numpy as np
 import pickle
 from sklearn.preprocessing import LabelEncoder
 
+if st.query_params.get("ping"):
+    st.write("OK")
+    st.stop()
+
 # Load model and scaler
 with open('mental_health_predictor.pkl', 'rb') as f:
     model = pickle.load(f)
