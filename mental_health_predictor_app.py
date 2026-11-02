@@ -19,7 +19,7 @@ with open('scaler.pkl', 'rb') as f:
 st.title("🧠 Mental Health Disorder Risk Predictor")
 
 st.markdown("""
-Enter the required details below and click **Predict** to see if you are likely to need mental health treatment.
+Enter the required details below and click **Submit and Get your Resul** to see if you are likely to need mental health treatment.
 """)
 
 # Input form
