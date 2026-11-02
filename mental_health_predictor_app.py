@@ -93,11 +93,12 @@ st.write("🧪 Feature vector length:", len(final_input))  # Should be 23
 final_input_np = scaler.transform([final_input])
 
 # Prediction
-if st.button("Predict"):
+# if st.button("Predict"):
+if st.button("Submit and Get your Result"):
     prediction = model.predict(final_input_np)
     if prediction[0] == 1:
-        st.error("⚠️ You likely need mental health treatment. Contact an approved mental health hospital nearest to you")
+        st.error("⚠️ You  need mental health treatment. Contact an approved mental health hospital nearest to you")
     else:
-        st.success("✅ Unlikely to need mental health treatment.")
+        st.success("✅ You need mental health treatment.")
 
 
